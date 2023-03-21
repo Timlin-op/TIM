@@ -1,0 +1,54 @@
+.wrapper{
+    border: 2px solid #000;
+    height: 600px;
+    position: relative;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+/* position */
+    position: absolute;
+    /* 將紅色框框放置中 */
+    left: 50%;
+    top: 50%;
+    /* auto prefixer */
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    /* 變形屬性 */
+    /* transform: translate(100%,100%); */
+    /* transform: translateX(100px); */
+    /* transform: translateX(100px) translateY(100px); */
+    /* transform: rotate(45deg); */
+    /* transform: skew(45deg); */
+    /* transform: scale(0.5); */  
+}
+/* 為元素選擇器 */
+.box:before{
+    content: '123';
+    display: block;
+    background-color: yellow;
+}
+/*與上方寫法相同*/
+/* .wrapper :before{
+    content:'789789';
+} */
+.box:after{
+    content:'456';
+    display: block;
+    background-color: yellow;
+}
+/* 位類選擇器 */
+.box:hover{
+    background-color: blue;
+}
+.box:active{
+    background-color: blueviolet;
+}
+
+/* 結合使用 */
+.box:hover::after{
+    background-color: orange;
+}

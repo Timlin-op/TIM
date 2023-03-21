@@ -1,0 +1,102 @@
+/* Globel */
+* {
+	box-sizing: border-box;
+
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+html,body{
+	height: 100%;
+}
+h1,h2,p{
+	margin: 0;
+}
+
+.wrapper{
+	height: 100%;
+	background-color: #ccc;
+	background: linear-gradient(#EF9FBF,#F9DED7);
+	overflow: hidden;
+}
+
+/* Product Card 閮剖? */
+.product{
+	width: 800px;
+	height: 540px;
+	background-color: #fff;
+	box-shadow: 0 20px 80px 0 rgba(0,0,0,0.5);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 128px;
+    padding: 16px;
+    border-radius: 4px;
+
+}
+.product .info{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding: 64px 56px;
+	background-color: #f9f9f9;
+	height: 100%;
+}
+.product .image{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	height: 100%;
+	overflow:  hidden;
+}
+.product .image img{
+	height: 100%;
+	/*width: 100%;*/
+    display: block;
+}
+.product .name{
+    font-size: 100px;
+    font-weight: 300px;
+    color: #444;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    text-shadow: 0 48px 10px rgba(0,0,0,0.1);
+    /* 定位元素與層級設定 */
+    position:relative;
+    z-index: 10;
+}
+.product .price{
+    font-size: 48px;
+    font-weight: 300;
+    color: #EA4C73;
+    margin-bottom: 16px;
+}
+.product .des{
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+    margin-bottom: 16px;
+}
+.product .btn{
+    display: inline-block;
+    padding: 12px 40px;
+    line-height: 24px;
+    /* text-align: center;
+    width: 200px; */
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 8px;
+    color:#FFF;
+    box-shadow: 0 8px 40px 0 rgba(0,0,0,0.5);
+    background-color: #EA4C73;
+    background: rgba(252,236,252,1);
+    background: -moz-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,236,252,1)), color-stop(50%, rgba(251,166,225,1)), color-stop(51%, rgba(253,137,215,1)), color-stop(100%, rgba(255,124,216,1)));
+    background: -webkit-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+    background: -o-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+    background: -ms-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+    background: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8', GradientType=1 );;
+}

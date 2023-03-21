@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* layout */
+/* container */
+.container{
+    display: block;    
+    margin: 0 auto;
+    width: 960px;
+    border: 1px solid #000;
+}
+
+/* inline block */
+.row{
+    border: 1px solid #000;
+    background-color: #aacbff;
+}
+
+.col{
+    width: 33.33333%;
+    border: 1px solid white;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #2f66bc;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* component */
+
+/* card */
+.card{
+    height: 300px;
+    width: 100%;
+    background-color: pink;
+}
+
+
+/* float row */
+.float-row{
+    border: 2px solid blue;
+    background-color: #aacbff;
+}
+
+.float-row::after{
+    content: '';    
+    display: block;
+    clear: both;
+}
+
+/* float-col */
+.float-col{
+    border: 1px solid white;
+    background-color: #2f66bc;
+    
+    width: 33.33333%;
+    padding-left: 16px;
+    padding-right: 16px;
+    float:left;
+}
+
+.footer{
+    background-color: #333;
+    height: 100px;
+}
+    
+/* .clearfix{
+    clear: both;
+} */
+
+/* flex */
+.flex-row{
+    border: 2px solid orange;
+    background-color: #aacbff;
+
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.flex-col{
+    border: 1px solid white;
+    background-color: #2f66bc;
+    
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /* width: 200px; */
+}
+
+.flex-col-1{
+    width: 200px;
+}
+.flex-col-2{
+    flex: 2;
+}
+.flex-col-3{
+    flex: 1;
+}

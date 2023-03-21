@@ -1,0 +1,65 @@
+.outter{
+   height: 300px;
+    border: 1px solid #000;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    /* border: 1px solid #000; */
+}
+/* margin auto */
+/* 無法作垂直方向置中 */
+.box1{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* inline block置中方式 */
+/* 有兩個區塊會變成左右兩塊 */
+.outter2{
+    text-align: center;
+}
+.box2{
+    display: inline-block;
+    /* inline高度寬度會消失 */
+    text-align: left;
+}
+
+/* flex */
+
+.outter3{
+    display: flex;  /* 寫在父層 */
+    /* flex-direction: row-reverse; 相反方向 */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    /* justify-content: space-between; 分空間 */
+    /* justify-content: space-around;  */
+    /* justify-content: flex-start; 從左邊開始 */
+    /* justify-content: flex-end; 右邊靠其 */
+}
+/* .box3{
+    /* margin: auto; 方法二
+    /* align-self: center; 方法四
+
+
+/* position */
+.outter4{
+    position: relative;
+}
+.box4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* 文字自中 */
+.box5{
+    text-align: center;
+    /* 設定line height跟box高度一樣 */
+    line-height: 200px;  
+}

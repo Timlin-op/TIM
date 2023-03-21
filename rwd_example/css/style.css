@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+}
+
+/* media query */
+/* brake point */
+/* desktop first */
+/* @media screen and (max-width:768px) {
+    .box{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width:540px) {
+    .box{
+        background-color: pink;
+    }
+}
+@media screen and (max-width:375px) {
+    .box{
+        background-color: skyblue;
+    }
+} */
+
+
+/* Mobile first 從小螢幕到大螢幕 */
+/* min-width 大於等於該條件 */
+@media screen and (min-width:375px) {
+    .box{
+        background-color: pink;
+    }
+}
+
+@media screen and (min-width:540px) {
+    .box{
+        background-color: yellow;
+    }
+}
+/* 針對某個設備的寬度高度 */
+@media screen and (width:375px) and (height:812px) {
+    .box{
+        background-color: skyblue;
+    }
+}
